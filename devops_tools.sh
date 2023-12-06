@@ -529,7 +529,7 @@ WantedBy=multi-user.target\n " | sudo tee -a /etc/systemd/system/node_exporter.s
                 echo "$tool- $version"
                 sudo systemctl restart prometheus.service > /dev/null 2>&1
                 echo "Please wait $tool server URL generation under progress"
-                sleep 15 
+                sleep 30 
                 prometheus_port=`journalctl -eu prometheus | grep "Listening on" | head -n 1 |cut -d ":" -f10`
                 sudo curl --connect-timeout 4 http://$prometheus_ip:$prometheus_port  > /dev/null 2>&1
                  if [ $? -eq 0 ]
@@ -568,7 +568,7 @@ WantedBy=multi-user.target\n " | sudo tee -a /etc/systemd/system/node_exporter.s
                 echo "$tool- $version"
                 prometheus_port=`journalctl -eu prometheus | grep "Listening on" | head -n 1 |cut -d ":" -f10`
                 echo "Please wait $tool server URL generation under progress"
-                sleep 30
+                sleep 40
                 sudo curl --connect-timeout 4 http://$prometheus_ip:$prometheus_port  > /dev/null 2>&1
                  if [ $? -eq 0 ]
                  then
