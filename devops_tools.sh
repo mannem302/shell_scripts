@@ -1,6 +1,6 @@
 #!/bin/bash 
 echo "Author     : Anil Kumar Mannem."
-#Version    : 1.0.
+#Version    : 1.0
 #Email      : mannemanilkumar@hotmail.com.
 #License    : Open Source.
 #Released on: 07/12/2023.
