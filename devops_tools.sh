@@ -297,13 +297,17 @@ echo \
                  sudo systemctl restart docker.socket docker.service
                  echo "Docker was installed sucessfully and it's Version is:"
                  docker --version
+		 tput smso
                  echo "Please wait 2 min's and reload the page for using docker normally"
+		 tput rmso
                  sudo reboot
                  else
                  echo "Docker is available in your server and it's Version is:"
                  docker --version
                  sudo usermod -aG docker $USER
+		 tput smso
                  echo "Please wait 2 min's and reload the page for using docker normally"
+		 tput rmso
                  sudo reboot
                  fi
                 else
@@ -322,7 +326,9 @@ echo \
                 sudo usermod -aG docker $USER
                 echo "Docker was installed sucessfully and it's Version is:"
                 docker --version
+		tput smso
                 echo "Please wait 2 min's and reload the page for using docker normally"
+		tput rmso
                 sudo reboot
                 fi
                 ;;
