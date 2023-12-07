@@ -5,13 +5,13 @@ echo "Author     : Anil Kumar Mannem."
 #License    : Open Source.
 #Released on: 07/12/2023.
 echo "Below mentioned tool/Software can be installed as per your choice"
-echo "Git             |   Tomcat"
-echo "Java            |   Ansible"
-echo "Maven           |   terraform"
-echo "Grafana         |   SonarQube"
-echo "Docker          |   Prometheus"
-echo "Jenkins         |   Node_Exporter"  
-echo "Jfrog"     
+echo "1) Git             |  8) Tomcat"
+echo "2) Java            |  9) Ansible"
+echo "3) Maven           |  10) terraform"
+echo "4) Grafana         |  11) SonarQube"
+echo "5) Docker          |  12) Prometheus"
+echo "6) Jenkins         |  13) Node_Exporter"  
+echo "7) Jfrog"     
 read -p "Now you can install/download any devops tools/softwares by entering their name from the above list:" tool 
 bold=`tput bold`
 nobold=`tput sgr0`
