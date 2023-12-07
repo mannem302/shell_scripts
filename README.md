@@ -1,5 +1,5 @@
 # shell_scripts
-This script is for installing all devops tools
+This script is for installing all devops tools in UBUNTU operating system. (22.04 / 20.04 Version's)
 
 You can download this script file by using following link.
 
