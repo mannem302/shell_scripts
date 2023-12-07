@@ -1,5 +1,5 @@
 #!/bin/bash 
-echo "Author     : Anil Kumar Mannem."
+echo "Author: Anil Kumar Mannem."
 #Version    : 1.0
 #Email      : mannemanilkumar@hotmail.com.
 #License    : Open Source.
@@ -31,7 +31,7 @@ version=`curl http://$tomcat_ip:$tomcat_port/manager/html -u ${tomcat_user}:${to
 echo "Tomcat Server Version is: $version"
 }
 case $tool in
-    "tomcat"|"Tomcat"|"TOMCAT")
+    "tomcat"|"Tomcat"|"TOMCAT"|"8" )
            echo "You have entered $tool"
 	         service=`sudo ls /usr/lib/systemd/system | grep tomcat*`
            cd /var/lib/tomcat*/conf > /dev/null 2>&1
@@ -121,7 +121,7 @@ case $tool in
             fi
            fi
            ;;
-    "maven"|"Maven"|"MAVEN")
+    "maven"|"Maven"|"MAVEN"|"3")
                 echo "You have entered $tool "
                 mvn --version > /dev/null 2>&1
                 if [ $? -eq 0 ]
@@ -136,7 +136,7 @@ case $tool in
                 mvn --version
                 fi
                 ;;
-    "git"|"Git"|"GIT")
+    "git"|"Git"|"GIT"|"1")
                 echo "You have entered $tool" 
                 git --version > /dev/null 2>&1
                 if [ $? -eq 0 ]
@@ -151,7 +151,7 @@ case $tool in
                 git --version
                 fi
                 ;;
-    "java"|"Java"|"JAVA")
+    "java"|"Java"|"JAVA"|"2")
                 echo "You have entered $tool " 
                 java --version > /dev/null 2>&1
                 if [ $? -eq 0 ]
@@ -166,7 +166,7 @@ case $tool in
                 java --version
                 fi
                 ;;
-    "jenkins"|"Jenkins"|"JENKINS")
+    "jenkins"|"Jenkins"|"JENKINS"|"6")
                 echo "You have entered $tool " 
                 jenkins --version > /dev/null 2>&1
                 if [ $? -eq 0 ]
@@ -263,7 +263,7 @@ case $tool in
                  fi
                 fi
                 ;;
-     "docker"|"Docker"|"DOCKER")
+     "docker"|"Docker"|"DOCKER"|"5")
                 echo "You have entered $tool"
                 docker --version > /dev/null 2>&1
                 if [ $? -eq 0 ]
@@ -317,7 +317,7 @@ echo \
                 docker --version
                 fi
                 ;;
-        "grafana"|"Grafana"|"GRAFANA")
+        "grafana"|"Grafana"|"GRAFANA"|"4")
                 echo "You have entered $tool "
                 grafana_ip=`my_system_ip`
                 grafana_port=`sudo cat /etc/grafana/grafana.ini | grep "http_port" | cut -d "=" -f 2 | head -n 1 | cut -d " " -f 2` > /dev/null 2>&1
@@ -367,7 +367,7 @@ echo \
                  fi
                 fi
                 ;;
-      "ansible"|"Ansible"|"ANSIBLE")
+      "ansible"|"Ansible"|"ANSIBLE"|"9")
                 echo "You have entered $tool "
                 ansible --version > /dev/null 2>&1
                 if [ $? -eq 0 ]
@@ -384,7 +384,7 @@ echo \
                 ansible --version
                 fi
                 ;;
-      "terraform"|"Terraform"|"TERRAFORM")
+      "terraform"|"Terraform"|"TERRAFORM"|"10")
                 echo "You have entered $tool "
                 terraform -version > /dev/null 2>&1
                 if [ $? -eq 0 ]
@@ -402,7 +402,7 @@ echo \
                 terraform -version
                 fi
                 ;;
-      "sonarqube"|"Sonarqube"|"SONARQUBE")
+      "sonarqube"|"Sonarqube"|"SONARQUBE"|"11")
                 echo "You have entered $tool"
                 sonarqube_ip=`my_system_ip`
                 sudo systemctl status sonar.service > /dev/null 2>&1
@@ -471,7 +471,7 @@ LimitNOFILE=65536\n LimitNPROC=4096\n [Install]\n WantedBy=multi-user.target\n" 
                  fi
                 fi
                 ;;
-      "node_exporter"|"Node_exporter"|"NODE_EXPORTER")
+      "node_exporter"|"Node_exporter"|"NODE_EXPORTER"|"13")
                 echo "You have entered $tool "
                 node_exporter_ip=`my_system_ip`
                 systemctl status node_exporter > /dev/null 2>&1
@@ -523,7 +523,7 @@ WantedBy=multi-user.target\n " | sudo tee -a /etc/systemd/system/node_exporter.s
                  fi               
                 fi
                 ;;
-     "prometheus"|"Prometheus"|"PROMETHEUS")
+     "prometheus"|"Prometheus"|"PROMETHEUS"|"12")
                 echo "You have entered $tool "
                 prometheus_ip=`my_system_ip`
                 prometheus --version > /dev/null 2>&1
@@ -584,7 +584,7 @@ WantedBy=multi-user.target\n " | sudo tee -a /etc/systemd/system/node_exporter.s
                  fi               
                 fi
                 ;;
-      "jfrog"|"Jfrog"|"JFROG")
+      "jfrog"|"Jfrog"|"JFROG"|"7")
                 echo "You have entered $tool"
                 jfrog_ip=`my_system_ip`
                 sudo systemctl status artifactory.service > /dev/null 2>&1
