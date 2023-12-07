@@ -5,8 +5,8 @@ echo "Author: Anil Kumar Mannem."
 #License    : Open Source.
 #Released on: 07/12/2023.
 echo "Below mentioned tool/Software can be installed individually as per your choice"
-echo "1) Git              8) Tomcat"
-echo "2) Java             9) Ansible"
+echo "1) Git               8) Tomcat"
+echo "2) Java              9) Ansible"
 echo "3) Maven            10) Terraform"
 echo "4) Grafana          11) SonarQube"
 echo "5) Docker           12) Prometheus"
