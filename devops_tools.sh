@@ -331,8 +331,8 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
                  sudo apt-get update
                  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
-                 echo "Please wait process is going on it takes only 20 Sec's time"
-                 sleep 20
+                 echo "Please wait process is going on it takes only 30 Sec's time"
+                 sleep 30
 		 sudo systemctl daemon-reload
                  sleep 4
                  sudo systemctl restart docker.socket docker.service
