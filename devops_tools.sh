@@ -333,6 +333,8 @@ echo \
                  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
                  echo "Please wait process is going on it takes only 20 Sec's time"
                  sleep 20
+		 sudo systemctl daemon-reload
+                 sleep 4
                  sudo systemctl restart docker.socket docker.service
                  echo "Docker was installed sucessfully and it's Version is:"
                  tput bold
