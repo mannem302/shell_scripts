@@ -25,7 +25,7 @@ bold=`tput bold`
 nobold=`tput sgr0`
 RED='\033[0;31m'
 NC='\033[0m' # No Color 
-echo "For installation of Git tool you can pass the inputs like - ${bold}git / Git / GIT / 1 $nobold(As per your convience)"   
+echo "For installation of Git tool you can pass the inputs like - ${bold}git / Git / GIT / 1 $nobold(As per your convenience)"   
 read -p "Now you can install any devops tools/softwares by entering their name(Not case-sensitive) or serial number from the above list:" tool 
 my_system_ip()
 {
