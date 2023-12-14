@@ -371,7 +371,7 @@ echo \
                  echo "$USER is in docker group" > /dev/null 2>&1
                  else
                  sudo usermod -aG docker $USER
-                 echo "$USER is added to docker group and now you needn't to enter 'sudo' everytime for executing docker commands"
+                 echo "$USER is added to docker group and now you neednot to enter 'sudo' everytime for executing docker commands"
                  echo "Now your system will gets restart, to make the changes get effective"
                  tput smso
                  echo "Please wait 2 min's and reload the page for using docker normally"
@@ -397,7 +397,7 @@ echo \
                 docker --version
                 tput sgr0
                 sudo usermod -aG docker $USER
-                echo "$USER is added to docker group and now you needn't to enter 'sudo' everytime for executing docker commands"
+                echo "$USER is added to docker group and now you neednot to enter 'sudo' everytime for executing docker commands"
                 echo "Now your system will gets restart, to make the changes get effective"
                 tput smso
                 echo "Please wait 2 min's and reload the page for using docker normally"
