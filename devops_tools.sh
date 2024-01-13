@@ -571,7 +571,7 @@ case $tool in
     echo "You can use docker commands normally"
     else
     sudo usermod -aG docker $USER
-    echo "$USER is added to docker group and now you needn't to enter 'sudo' everytime for executing docker commands"
+    echo "$USER is added to docker group and now you neednot to enter 'sudo' everytime for executing docker commands"
     echo "Now your instance is being restarted for applying the user changes"
     tput smso
     echo " For using docker normally, Please wait for 2 Min's and reload the page "
