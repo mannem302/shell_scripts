@@ -967,7 +967,7 @@ ExecStop=/opt/artifactory/app/bin/artifactory.sh stop\n User=jfrog\n Group=jfrog
                          touch as_root_user
                          echo "export KUBECONFIG=/etc/kubernetes/admin.conf" >as_root_user
                          sudo wget https://raw.githubusercontent.com/mannem302/download/main/as_normal_user
-                         kubernetes_timer_10
+                         kubernetes_timer_20
                          echo "Kubernetes master status getting ready, please wait ..."
                          kubectl get nodes
                          echo "Kubernetes master node is ready and now you can add worker nodes by using generated token"
