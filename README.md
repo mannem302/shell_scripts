@@ -10,7 +10,7 @@ copy the following line and paste in your terminal
 # If you are trying to install in your system 
 copy the following line and paste in your terminal
 
-----> wget https://raw.githubusercontent.com/mannem302/shell_scripts/main/Localhost_Script.sh  <-----
+----> wget https://raw.githubusercontent.com/mannem302/shell_scripts/main/localhost_Devops_tools.sh  <-----
 
 After downloading execute the following command in shell like
 
