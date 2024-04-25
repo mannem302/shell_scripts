@@ -7,6 +7,10 @@ copy the following line and paste in your terminal
 
 -----> wget https://raw.githubusercontent.com/mannem302/shell_scripts/main/devops_tools.sh  <-----
 
+# If you are trying to install in your system 
+copy the following line and paste in your terminal
+-----> wget https://raw.githubusercontent.com/mannem302/shell_scripts/main/Localhost_Script.sh  <-----
+
 After downloading execute the following command in shell like
 
 -----> bash devops_tools.sh  <------
